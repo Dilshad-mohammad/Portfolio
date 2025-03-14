@@ -15,6 +15,12 @@ List<Project> projectList = [
     'https://github.com/Dilshad-mohammad/DeVault',
   ),
   Project(
+    'Convo ',
+    'The Chat App is a real-time messaging application built using Flutter, designed to provide a seamless communication experience. It supports instant messaging, user authentication, real-time chat updates, and images using REST-APIs ensuring smooth and efficient conversations. ',
+    'assets/images/dev.jpg',
+    'https://convo-pied.vercel.app/',
+  ),
+  Project(
       'Headlee Green Tea',
       'Designed and developed the UI for a Tea Store application using Flutter. Focused on enhancing user experience through intuitive navigation and seamless interactions.',
       'assets/images/hgt.jpg',
