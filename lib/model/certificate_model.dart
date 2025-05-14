@@ -2,14 +2,14 @@ class CertificateModel {
   final String name;
   final String organization;
   final String date;
-  final String skills;
+  final String? skills;
   final String credential;
 
   CertificateModel({
     required this.name,
     required this.organization,
     required this.date,
-    required this.skills,
+    this.skills,
     required this.credential,
   });
 }
@@ -31,17 +31,23 @@ List<CertificateModel> certificateList = [
   ),
   CertificateModel(
     name: 'Internship',
-    organization: 'SO Infotech pvt Ltd.',
+    organization: 'SO-Infotech pvt Ltd.',
     date: 'SEP 2024',
     skills: 'Flutter . Dart . Firebase . API\'s',
     credential:  'https://www.linkedin.com/posts/dilshad-alam3748_flutter-appdevelopment-internship-activity-7252742009361215488-wbR7?utm_source=share&utm_medium=member_desktop',
   ),
   CertificateModel(
-      name: 'Introductin to Flutter',
+      name: 'Introduction to Flutter',
       organization: 'Data Flair',
       date: 'MAR 2024',
       skills: 'Flutter',
       credential: 'https://www.linkedin.com/posts/dilshad-alam3748_introduction-to-flutter-activity-7176940805364862977-NLQ2?utm_source=share&utm_medium=member_desktop'),
-
+  CertificateModel(
+        name: 'Research Paper',
+        organization: '''International Journal of Scientific
+Research and Management (IJSRM)''',
+        date: 'MAY 2025',
+        skills: 'Writing, Research, analysis',
+        credential: 'https://www.doi.org/10.55041/IJSREM47448'),
 
 ];
