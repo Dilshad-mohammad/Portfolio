@@ -13,7 +13,6 @@ class ProjectController  extends GetxController{
     false,
   ].obs;
 
-
   onHover(int index,bool value){
     hovers[index]=value;
   }

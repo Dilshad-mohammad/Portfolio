@@ -45,7 +45,7 @@ List<CertificateModel> certificateList = [
   CertificateModel(
         name: 'Research Paper',
         organization: '''International Journal of Scientific
-Research and Management (IJSRM)''',
+                          Research and Management (IJSRM)''',
         date: 'MAY 2025',
         skills: 'Writing, Research, analysis',
         credential: 'https://www.doi.org/10.55041/IJSREM47448'),

@@ -38,5 +38,15 @@ List<Project> projectList = [
           Implemented a user-friendly interface using Streamlit (Python).''',
       '',
       'https://github.com/Dilshad-mohammad/BOOMING-BULLS'),
-
+  Project(
+      'MedCab - all HealthCare Services',
+      ''' Role: Flutter Developer | Video Consultation Module
+          MedCab is India's comprehensive healthcare platform offering ambulance booking, pathology tests, medicine delivery, medical equipment rentals, and online doctor consultations across 1000+ cities.
+          My Contribution:
+          I developed the video consultation feature for MedCab during my time at Innovative Modern Engineers. 
+          This module enables patients to connect with skilled doctors through secure, real-time video calls, making quality healthcare accessible from home.
+          The feature includes doctor discovery, appointment booking, and seamless integration with MedCab's broader healthcare ecosystem.
+          Built with Flutter and real-time video SDK integration, this solution has become a vital component in providing 24/7 accessible healthcare services to millions of users across India.''',
+      '',
+      'https://play.google.com/store/apps/details?id=com.medcab.consumer'),
 ];

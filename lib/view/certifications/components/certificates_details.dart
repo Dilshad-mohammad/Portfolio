@@ -82,7 +82,6 @@ class CertificateStack extends StatelessWidget {
                         ]
                     ),
                     child: const Row(
-
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Credentials',style: TextStyle(color: Colors.white,fontSize: 13),),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 
@@ -22,11 +21,13 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
       duration: const Duration(milliseconds: 1000),
     )..repeat(reverse: true); // Repeat the animation loop
   }
+
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(

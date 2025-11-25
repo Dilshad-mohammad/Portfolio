@@ -44,15 +44,15 @@ class MySKills extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Flutter',image: 'assets/icons/flutter.png',),
+        AnimatedLinearProgressIndicator(percentage: 0.65, title: 'Flutter',image: 'assets/icons/flutter.png',),
         AnimatedLinearProgressIndicator(percentage: 0.7, title: 'Dart',image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Firebase',image: 'assets/icons/firebase.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.55, title: 'Firebase',image: 'assets/icons/firebase.png'),
         AnimatedLinearProgressIndicator(percentage: 0.65, title: 'Git/GitHub',image: 'assets/icons/git.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.5, title: 'Responsive Design',image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Clean Architecture',image: 'assets/icons/flutter.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.6, title: 'Provider',image: 'assets/icons/bloc.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.5, title: 'Getx',image: 'assets/icons/dart.png'),
-        AnimatedLinearProgressIndicator(percentage: 0.65, title: 'MVC, MVVM Architecture',image: 'assets/icons/flutter.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.75, title: 'Responsive Design',image: 'assets/icons/flutter.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.7, title: 'Clean Architecture',image: 'assets/icons/flutter.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.55, title: 'Provider',image: 'assets/icons/bloc.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.7, title: 'Getx',image: 'assets/icons/dart.png'),
+        AnimatedLinearProgressIndicator(percentage: 0.75, title: 'MVC, MVVM Architecture',image: 'assets/icons/flutter.png'),
       ],);
   }
 }
