@@ -6,22 +6,29 @@ import '../../../model/project_model.dart';
 
 class ProjectLinks extends StatelessWidget {
   final int index;
-  const ProjectLinks({super.key, required this.index});
+  final bool? isLive;
+  const ProjectLinks({super.key, required this.index, this.isLive});
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Row(
-          children: [
-            const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
-            IconButton(onPressed: () {launchUrl(Uri.parse(projectList[index].link));}, icon: SvgPicture.asset('assets/icons/github.svg')),
-          ],
+        InkWell(
+          onTap: (){launchUrl(Uri.parse(projectList[index].link));},
+          child: Row(
+            children: [
+              isLive==true ? const Text('View App',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis) :
+           const Text('Check on Github',style: TextStyle(color: Colors.white),overflow: TextOverflow.ellipsis),
+             isLive==true ? SizedBox(
+                 height: 25,
+                 child: SvgPicture.asset('assets/icons/gplay.svg')) : Padding(
+               padding: const EdgeInsets.only(left: 8.0),
+               child: SvgPicture.asset('assets/icons/github.svg'),
+             ),
+            ],
+          ),
         ),
         const Spacer(),
-        TextButton(
-            onPressed: () {
-              launchUrl(Uri.parse(projectList[index].link));
-            }, child: const Text('Read More>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),))
+        const Text('View Project>>',overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.amber,fontWeight: FontWeight.bold,fontSize: 10),)
       ],
     );
   }

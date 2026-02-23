@@ -44,8 +44,7 @@ List<CertificateModel> certificateList = [
       credential: 'https://www.linkedin.com/posts/dilshad-alam3748_introduction-to-flutter-activity-7176940805364862977-NLQ2?utm_source=share&utm_medium=member_desktop'),
   CertificateModel(
         name: 'Research Paper',
-        organization: '''International Journal of Scientific
-                          Research and Management (IJSRM)''',
+        organization: 'International Journal of Scientific Research and Management (IJSRM)',
         date: 'MAY 2025',
         skills: 'Writing, Research, analysis',
         credential: 'https://www.doi.org/10.55041/IJSREM47448'),

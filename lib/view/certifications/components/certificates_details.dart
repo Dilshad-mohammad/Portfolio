@@ -29,6 +29,7 @@ class CertificateStack extends StatelessWidget {
           duration: const Duration(milliseconds: 500),
           child: SingleChildScrollView(
             child: Column(
+              mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -46,7 +47,7 @@ class CertificateStack extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(certificateList[index].organization,style: const TextStyle(color: Colors.amber),),
+                    Expanded(child: Text(certificateList[index].organization,style: const TextStyle(color: Colors.amber),)),
                     Text(certificateList[index].date,style: const TextStyle(color: Colors.grey,fontSize: 12),),
                   ],
                 ),
