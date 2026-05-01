@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "backend:install": "cd backend && npm install",
+    "backend:dev": "cd backend && npm run dev",
+    "admin:install": "cd admin && npm install",
+    "admin:dev": "cd admin && npm run dev"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0"
+  }
+}
